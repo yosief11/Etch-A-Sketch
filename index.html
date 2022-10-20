@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-E-Sketch</title>
+    <link rel ="stylesheet" href="styles.css">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1> Etch-E-Sketch</h1>
+    <h8> In order to play press click, you can stop and contine to draw by clicking.</h8>
+    <h8> The grid default is 16x16, you can enter a custom size below .</h8>
+    <div class="header">
+        <h6>Select the Size</h6>
+        <button id="popup" class="btn btn-danger">Select</button>
+    </div>
+    <p id="message"></p>
+    <div class="board"></div>
+    <div class="footer">
+        <button class="btn btn-dark" onclick = "setColor('black')">Black</button>
+        <button class="btn btn-info" onclick = "colorDiv('random')">Random</button>
+        <button class="btn btn-primary" onclick = "eraseGrid()">Erase</button>
+    </div>
+    
+</body>
+</html>
